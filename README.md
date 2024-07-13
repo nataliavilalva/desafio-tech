@@ -23,11 +23,12 @@ Este projeto é uma suíte de testes automatizados utilizando [Cypress](https://
     - `npx cypress open`
 
 ## Estrutura do Projeto
+```
 DESAFIO-TECH/
-├── cypress/
-│   ├── e2e/                # Testes end-to-end
-│   │   └── login.cy.js     # Testes da página de login
-│   │   └── myInfo.cy.js    # Testes da página de informações do usuário
+|── cypress/
+│   ├── e2e/                
+│   │   └── *.cy.js         # Testes da página de login
+│   │   └── *.cy.js         # Testes da página de informações do usuário
 │   ├── fixtures/           # Arquivos de dados fixos
 │   ├── support/            # Arquivos de suporte e comandos personalizados
 │   │   ├── commands.js     # Comandos personalizados
@@ -37,8 +38,8 @@ DESAFIO-TECH/
 ├── .gitignore              # Pastas e arquivos que não são enviados para o repositório
 ├── package-lock.json       # Gerado automaticamente com as instalações e atualizações de pacotes;
 ├── package.json            # Dependências e scripts npm
-└── README.md               # Este arquivo
-
+└── README.md               # Este arquivo   
+```
 ## Boas Práticas
 - Organização dos Testes: Mantenha os testes organizados em subpastas conforme necessário.
 - Comandos Reutilizáveis: Utilize comandos personalizados para evitar duplicação de código.
