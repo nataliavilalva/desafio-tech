@@ -49,7 +49,7 @@ DESAFIO-TECH/
 - Dados Fixos: Utilize a pasta fixtures para armazenar dados fixos que serão usados nos testes.
 
 ## GitHub Actions
-Foi criado uma branch github-actions com exemplo básico para uso do GitHub Actions com finalidade de disponibilizar uma pipeline de testes.
+Foi criado um exemplo básico para uso do GitHub Actions com finalidade de disponibilizar uma pipeline de testes.
 
 Flow executado: [Disponível aqui](https://github.com/nataliavilalva/desafio-tech/actions)
 
