@@ -25,22 +25,34 @@ Este projeto é uma suíte de testes automatizados utilizando [Cypress](https://
 ## Estrutura do Projeto
 ```
 DESAFIO-TECH/
+|── .github/                        # Pasta oculta utilizada pelo github actions para leitura dos arquivos de configuração;
+│   ├── workflows/                  # Pasta opcional para separar diferentes workflows;
+│   │   └── sequential-action.yml   # Arquivo de configuração/instruções utilizada para a criação do ambiente e execução da pipeline;
 |── cypress/
 │   ├── e2e/                
-│   │   └── *.cy.js         # Testes da página de login
-│   │   └── *.cy.js         # Testes da página de informações do usuário
-│   ├── fixtures/           # Arquivos de dados fixos
-│   ├── support/            # Arquivos de suporte e comandos personalizados
-│   │   ├── commands.js     # Comandos personalizados
-│   │   └── e2e.js          # Configuração global
-│   └── cypress.config.js   # Configurações do Cypress
-├── node_modules/           # Dependências do projeto
-├── .gitignore              # Pastas e arquivos que não são enviados para o repositório
-├── package-lock.json       # Gerado automaticamente com as instalações e atualizações de pacotes;
-├── package.json            # Dependências e scripts npm
-└── README.md               # Este arquivo   
+│   │   └── *.cy.js                 # Testes da página de login;
+│   │   └── *.cy.js                 # Testes da página de informações do usuário;
+│   ├── fixtures/                   # Arquivos de dados fixos;
+│   ├── support/                    # Arquivos de suporte e comandos personalizados;
+│   │   ├── commands.js             # Comandos personalizados;
+│   │   └── e2e.js                  # Configuração global;
+│   └── cypress.config.js           # Configurações do Cypress;
+├── node_modules/                   # Dependências do projeto;
+├── .gitignore                      # Pastas e arquivos que não são enviados para o repositório;
+├── package-lock.json               # Gerado automaticamente com as instalações e atualizações de pacotes;
+├── package.json                    # Dependências e scripts npm;
+└── README.md                       # Este arquivo;   
 ```
 ## Boas Práticas
 - Organização dos Testes: Mantenha os testes organizados em subpastas conforme necessário.
 - Comandos Reutilizáveis: Utilize comandos personalizados para evitar duplicação de código.
 - Dados Fixos: Utilize a pasta fixtures para armazenar dados fixos que serão usados nos testes.
+
+## GitHub Actions
+Foi criado uma branch github-actions com exemplo básico para uso do GitHub Actions com finalidade de disponibilizar uma pipeline de testes.
+
+Flow executado: [Disponível aqui](https://github.com/nataliavilalva/desafio-tech/actions)
+
+Arquivo yml: [Disponível aqui](https://github.com/nataliavilalva/desafio-tech/blob/github-actions/.github/workflows/sequential-action.yml) 
+
+A pipeline pode ser utilizada para uso com Docker, MR, entre outros conforme [documentação](https://github.com/marketplace/actions/cypress-io#end-to-end-testing) 
